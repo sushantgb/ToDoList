@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="todolist.css" type="text/css">
+</head>
+
+<body>
+    <!-- main conatiner div -->
+    <div class="container">
+        <!-- upper section within main div -->
+        <div class="upper">
+            <h2>TO DO LIST</h2>
+            <!-- input field and button -->
+            <div class="input">
+                <input type="text" class="add" placeholder="Add Your task">
+                <button id="insert" title="Enter your task">Add</button>
+            </div>
+        </div>
+        <!-- lower section within main div to display list -->
+        <div class="list">
+            <h3>Your List</h3>
+            <!-- message - when list is empty -->
+            <p id="listremark">Your List is empty</p> 
+            <!-- list -->
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    <!-- secondary popup container div -->
+    <div class="popup-display">
+        <h4>Edit Your Task</h4>
+        <input type="text" class="edit-text">
+        <div class="edit-buttons">
+            <button class="submit">Submit</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </div>
+    <!-- js file -->
+    <script src="todolist.js" type="text/javascript"></script>
+</body>
+
+</html>
